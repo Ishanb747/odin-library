@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    border: solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.main_grid{
+    display: flex;
+}
+
+.sidebitch{
+    width: 20%;
+    height: 90vh;
+    border: solid black;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.create{
+    background-color: white;
+    font-size: 28px;
+    font-family: serif;
+    border: solid black;
+    padding: 10px;
+    cursor: pointer;
+    border-top: wheat;
+}
+
+#mydialog{
+    width: 19.5%; /* Full width of sidebar minus padding */
+    margin: 8px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 28%; /* Adjust this value to position it below the buttons */
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#mydialog form {
+    display: flex;
+    flex-direction: column;
+}
+
+#mydialog form p {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: serif;
+}
+
+#mydialog form input[type="text"],
+#mydialog form input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#mydialog form button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#title{
+    border: solid black;
+    border-radius: 20px;
+    font-family: serif;
+}
+
+#author{
+    border: solid black;
+    border-radius: 20px;
+    font-family: serif;
+}
+
+#pages{
+    border: solid black;
+    border-radius: 20px;
+    font-family: serif;
+}
+
+#submit{
+    border: solid black;
+    background-color: white;
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+#cancelButton{
+    border: solid black;
+    background-color: white;
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+.grid{
+    display: flex;
+    margin: 20px;
+
+}
+
+
+.book {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 200px;
+    padding: 15px;
+    height: 50%;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book p {
+    margin: 5px 0;
+}
+
+.book button {
+    margin-top: auto;
+    padding: 10px;
+    border: solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book button:hover {
+    background-color: white;
+}
+
+
+/* the container */
+#cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
